@@ -1,0 +1,8 @@
+- name: default action on all hosts
+  hosts: all
+  become: root
+  tasks:
+    - name: copy file to host servers
+      copy:
+        src: /tmp/test.txt
+        dest: /tmp/test.txt
