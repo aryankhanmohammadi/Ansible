@@ -1,0 +1,4 @@
+- name : stop service ssh
+  service:
+    name: sshd
+    state: stopped
